@@ -41,6 +41,28 @@
     </script>
     <script>
     $(document).ready(function(){
+      $("#spreadBtnjbe").click(function(){
+        if($("#hiddenListjbe").is(":visible")){
+          $("#hiddenListjbe").slideUp();
+        }else{
+          $("#hiddenListjbe").slideDown();
+        }
+      });
+    });
+    </script>
+    <script>
+    $(document).ready(function(){
+      $("#spreadBtnam").click(function(){
+        if($("#hiddenListam").is(":visible")){
+          $("#hiddenListam").slideUp();
+        }else{
+          $("#hiddenListam").slideDown();
+        }
+      });
+    });
+    </script>
+    <script>
+    $(document).ready(function(){
       $("#spreadBtnch").click(function(){
         if($("#hiddenListch").is(":visible")){
           $("#hiddenListch").slideUp();
@@ -222,6 +244,13 @@
           <li><a href="http://etextbook.jihak.co.kr/index.php/viewer/fixed/172/orange/pd/">화학Ⅱ</a></li>
         </ul>
       </li>
+      <li>
+        <button id="spreadBtnjbe" class="btn01">전라북도교육청</button>
+        <ul id="hiddenListjbe" class="example01" style="display: none;">
+          <li><a href="고급수학1.zip">고급수학Ⅰ</a></li>
+          <li><a href="고급수학2.pdf">고급수학Ⅱ</a></li>
+        </ul>
+      </li>
     </ul>
     <br>
     <br>
@@ -301,6 +330,13 @@
         <ul id="hiddenListear" class="example01" style="display: none;">
           <li><a href="http://bit.ly/32PelVX">Ⅰ-비상</a></li>
           <li><a href="http://bit.ly/38k0Sa0">Ⅱ-비상</a></li>
+        </ul>
+      </li>
+      <li>
+        <button id="spreadBtnam" class="btn01">고급수학</button>
+        <ul id="hiddenListam" class="example01" style="display: none;">
+          <li><a href="고급수학1.zip">고급수학Ⅰ</a></li>
+          <li><a href="고급수학2.pdf">고급수학Ⅱ</a></li>
         </ul>
       </li>
     </ul>
