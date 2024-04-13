@@ -96,6 +96,17 @@
     </script>
     <script>
     $(document).ready(function(){
+      $("#spreadBtnm").click(function(){
+        if($("#hiddenListm").is(":visible")){
+          $("#hiddenListm").slideUp();
+        }else{
+          $("#hiddenListm").slideDown();
+        }
+      });
+    });
+    </script>
+    <script>
+    $(document).ready(function(){
       $("#spreadBtnm1").click(function(){
         if($("#hiddenListm1").is(":visible")){
           $("#hiddenListm1").slideUp();
@@ -246,8 +257,8 @@
     <button id="spreadBtn03" class="btn01">과목별</button>
     <ul id="hiddenList02" class="example01" style="display: none;">
       <li>
-        <button id="spreadBtnm1" class="btn01">수학</button>
-        <ul id="hiddenListm1" class="example01" style="display: none;">
+        <button id="spreadBtnm" class="btn01">수학</button>
+        <ul id="hiddenListm" class="example01" style="display: none;">
           <li><a href="https://ebook.mirae-n.com/@kb2095" target="_blank">미래엔</a></li>
           <li><a href="http://link.visang.com/?id=q70kZw05u9h0MV6r-E6KEJKnxha82b-sTWb4YTzzkb8=" target="_blank">비상</a></li>
           <li><a href="https://file.kumsung.co.kr/text/ebook/2015re/pre2019/2_h_math/webview/index.html" target="_blank">금성</a></li>
